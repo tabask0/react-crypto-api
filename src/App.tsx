@@ -36,6 +36,12 @@ const App = () => {
           onChange={handleChange}/>
         </form>
       </div>
+      <div className="currencies">
+      <p className="currency-name">Currency</p>
+      <p className="currency-price">Price</p>
+      <p className="currency-volume">Volume</p>
+      <p className="currency-change">Change</p>
+      </div>
       {filteredCoins.map(coin => {
         return (
           <Coin key={coin.id} 
