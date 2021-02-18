@@ -14,6 +14,7 @@ const App = () => {
    .then(res => {
      setCoins(res.data)
    })
+   
    .catch(error => console.log("There is an " + error))
  }, []);
 
@@ -49,7 +50,7 @@ const App = () => {
           image={coin.image}
           symbol={coin.symbol}
           marketcap={coin.market_cap}
-          price={coin.current_price}
+          current_price={coin.current_price}
           priceChange={coin.price_change_percentage_24h}
           volume={coin.total_volume}
           high={coin.high_24h}
